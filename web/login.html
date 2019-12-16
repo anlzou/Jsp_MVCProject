@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>系统登录</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script language="JavaScript">
+        if (window != top){
+           top.location.href = location.href;
+        }
+    </script>
+</head>
+<body>
+<!-- Top content -->
+
+<div class="inner-bg in">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 form-box">
+                <div class="form-top">
+                    <div class="form-top-left">
+                        <h3>登录系统</h3>
+                        <p>请输入您的用户名和密码</p>
+                    </div>
+                    <div class="form-top-right">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <form role="form" action="LoginServlet" method="get" class="login-form">
+                        <div class="form-group">
+                            <label class="sr-only" for="form-username"></label>
+                            <input type="text" name="username" value="123456" placeholder="用户名..."
+                                   class="form-username form-control" id="form-username">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="form-password"></label>
+                            <input type="password" name="password" value="123456" placeholder="密码..."
+                                   class="form-password form-control" id="form-password">
+                        </div>
+                        <button type="submit" class="btn" style="background-color: #3e8f3e">登录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Javascript -->
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

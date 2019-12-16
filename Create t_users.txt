@@ -1,0 +1,12 @@
+select * from t_users;
+
+create table t_users(
+  user_id varchar2(20) not NULL primary key,
+  name varchar2(20) not null,
+  password varchar2(20) not null
+)
+
+drop TABLE t_users;
+
+INSERT into t_users values('123456','¹ÏÆ¤','123456');
+COMMIT;
